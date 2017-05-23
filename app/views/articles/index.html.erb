@@ -1,0 +1,14 @@
+
+<p>crawling</p>
+ 
+<%= form_tag articles_news_title_path, method: 'post' do %> 
+   <%= text_field_tag :query %> 
+   <%= submit_tag 'submit' %> 
+<% end %> 
+ <br> 
+<br> 
+<hr>
+<br>
+<% @articles.each do |a| %> 
+   <%= a.title %><br> 
+<% end %> 
